@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite para sair!</title>
+    <title>Tu é mano?</title>
     <style>
         body {
             background-color: pink;
@@ -39,18 +39,25 @@
         h1 {
             color: black; /* Alterando a cor do texto para preto */
         }
+        #gatito-img {
+            display: none; /* Oculta a imagem inicialmente */
+            max-width: 300px; /* Define uma largura máxima para a imagem */
+            margin-top: 20px; /* Adiciona margem superior para separar da pergunta */
+        }
     </style>
 </head>
 <body>
-    <h1>Aceita sair comigo?</h1>
+    <h1>Você é gay?</h1>
     <div id="buttons-container">
-        <button id="yes-button" class="button" onclick="marcarGatito()">Sim,claro!</button>
-        <button id="no-button" class="button" onclick="moverBoton()">Não, sinto muito!</button>
+        <button id="yes-button" class="button" onclick="mostrarGatito()">¡Sim, beijo homens!</button>
+        <button id="no-button" class="button" onclick="moverBoton()">Não, sou homem!</button>
     </div>
-
+    <img id="gatito-img" src="https://i.imgur.com/QQzIuVf.jpeg" alt="Gatito">
+    
     <script>
-        function marcarGatito() {
-            alert("Só me dizer quando você tá livre!");
+        function mostrarGatito() {
+            var img = document.getElementById('gatito-img');
+            img.style.display = 'block'; // Exibe a imagem
         }
 
         function moverBoton() {
